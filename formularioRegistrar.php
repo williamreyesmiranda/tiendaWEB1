@@ -26,20 +26,20 @@
                 <div class="form-group ">
                     <label for="nombre">Nombre: (*)</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Ingrese el Nombre del Producto" name="nombre" required>
-                    <div class="valid-feedback">Listo</div>
+                    <!-- <div class="valid-feedback">Listo</div> -->
                     <div class="invalid-feedback">Por Favor Ingrese el Nombre del Producto</div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="marca">Marca: (*)</label>
                         <input type="text" class="form-control" id="marca" placeholder="Ingrese la Marca del Producto" name="marca" required>
-                        <div class="valid-feedback">Listo</div>
+                        <!-- <div class="valid-feedback">Listo</div> -->
                         <div class="invalid-feedback">Por Favor Ingrese la Marca del Producto</div>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="precio">Precio: (*)</label>
                         <input type="number" class="form-control" id="precio" placeholder="Ingrese el Precio del Producto" name="precio" required>
-                        <div class="valid-feedback">Listo</div>
+                        <!-- <div class="valid-feedback">Listo</div> -->
                         <div class="invalid-feedback">Por Favor Ingrese el Precio del Producto</div>
                     </div>
                 </div>

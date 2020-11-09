@@ -87,9 +87,27 @@ class BaseDatos
 
         //verifico el resultado
         if ($resultado) {
-            echo "Usuario Eliminado";
+            echo "  . <script>
+            Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Producto Eliminado Correctamente',
+        showConfirmButton: false,
+        timer: 2000,
+        backdrop: '#000000c5'
+         });
+        </script>";
         } else {
-            echo "Error";
+            echo ". <script>
+            Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Error al Eliminar el Producto',
+        showConfirmButton: false,
+        timer: 2000,
+        backdrop: '#000000c5'
+         });
+        </script>";
         }
     }
 }

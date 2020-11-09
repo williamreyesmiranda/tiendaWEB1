@@ -97,7 +97,7 @@
                     </div>
                     <div class="card-footer text-center">
                         <a href="#" class="btn btn-secondary px-5 mb-2">Editar</a>
-                        <a href="#" class="btn btn-danger px-5">Eliminar</a>
+                        <a href="eliminarProducto.php?id=<?php echo($producto['idProducto']);?>" class="btn btn-danger px-5  mb-2">Eliminar</a>
                     </div>
                 </div>
             </div>
