@@ -77,7 +77,7 @@
     //1. Crear un objeto de la base de datos
     $transaccion = new BaseDatos();
     //2. Definir la consulta para buscar datos
-    $consultaSQL = "SELECT * FROM productos";
+    $consultaSQL = "SELECT * FROM productos ORDER BY nombre";
     //3. ejecutar el metodo de consulta y almacenar la respuesta en una variable
     $productos = $transaccion->consultarDatos($consultaSQL);
 
@@ -88,7 +88,7 @@
 
             <div class="col-md-4 mb-5 ">
                 <div class="card h-100 border border-dark rounded">
-                    <img class="card-img-top" src="https://placehold.it/300x200" alt="">
+                    <img style="width:100%"class="card-img-top bg-secondary rounded" src="img/<?php echo($producto['nombre'])?>.png" alt="">
                     <div class="card-body">
                         <h4 class="card-title text-center text-uppercase"><?php echo($producto['nombre']);?></h4>
                         <p class="card-text text-capitalize"><b>marca: </b> <?php echo($producto['marca']);?></p>

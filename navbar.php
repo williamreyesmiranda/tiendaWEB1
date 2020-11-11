@@ -1,7 +1,7 @@
 <!-- Barra de navegacion -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top rounded">
     <div class="container">
-        <a class="navbar-brand" href="index.php"><img src="img/fruver.png" alt="" style="width: 50px;"> Los Coronavirus FRUVER</a>
+        <a class="navbar-brand" href="index.php"><img src="img/fruver.png" alt="" style="width: 50px;"> Los Coronavirus  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FRUVER</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,11 +21,11 @@
 </nav>
 
 <!-- Header -->
-<header class="bg-dark py-5 mb-5">
+<header class="bg-dark py-5 mb-5 rounded">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12 mt-5">
-                    <h1 class="display-5 text-white mt-5 mb-2">FRUVER VIRTUAL LOS CORONAVIRUS</h1>
+                    <h1 class="display-5 text-white mt-1 mb-2">WILLIAM REYES - ANDREA ARDILA</h1>
                     <p class="lead  text-white-50">Todo lo relacionado en frutas y verduras 100% virtual!!!!. <br> Para que no tengas que moverte de tu casa!!!</p>
                 </div>
             </div>
