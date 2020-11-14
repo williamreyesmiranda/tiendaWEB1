@@ -73,7 +73,6 @@
         <!-- /.row -->
         <?php
     include("BaseDatos.php");
-
     //1. Crear un objeto de la base de datos
     $transaccion = new BaseDatos();
     //2. Definir la consulta para buscar datos
