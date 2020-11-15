@@ -113,35 +113,35 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="editarProducto.php?<?php echo($producto['idProducto']);?>" method="POST">
+                            <form action="editarProducto.php?id=<?php echo($producto['idProducto']);?>" method="POST">
                                 <div class="form-group">
                                     <label for="nombreEditar">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombreEditar" value="<?php echo($producto['nombre']);?>">
+                                    <input type="text" class="form-control" id="nombreEditar" name="nombreEditar"value="<?php echo($producto['nombre']);?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="marcaEditar">Proveedor:</label>
-                                    <input type="text" class="form-control" id="marcaEditar" value="<?php echo($producto['marca']);?>">
+                                    <input type="text" class="form-control" id="marcaEditar" name="marcaEditar"value="<?php echo($producto['marca']);?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="precioEditar">Precio:</label>
-                                    <input type="text" class="form-control" id="precioEditar" value="<?php echo($producto['precio']);?>">
+                                    <input type="text" class="form-control" id="precioEditar" name="precioEditar" value="<?php echo($producto['precio']);?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="descEditar">Descripción:</label>
-                                    <textarea class="form-control" name="descEdidar" id="" rows="3"><?php echo($producto['descripcion']);?></textarea>
+                                    <textarea class="form-control" name="descEditar" id="descEditar" rows="3"><?php echo($producto['descripcion']);?></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="imgEditar">Url Imagen</label>
-                                    <input type="text" class="form-control" id="imgEditar" value="<?php echo($producto['img']);?>">
+                                    <input type="text" class="form-control" id="imgEditar" name="imgEditar"value="<?php echo($producto['img']);?>">
                                 </div>
+                                <div class="modal-footer">
+                            <button type="submit" class="btn btn-info px-5  mb-2" name="btnEditar">Editar</button>
 
+                        </div>
 
                             </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-info px-5  mb-2">Editar</button>
-
-                        </div>
+                       
                     </div>
                 </div>
             </div>
