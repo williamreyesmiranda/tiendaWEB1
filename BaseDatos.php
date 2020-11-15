@@ -45,8 +45,11 @@ class BaseDatos
         title: 'Producto Ingresado Correctamente',
         showConfirmButton: false,
         timer: 2000,
-        backdrop: '#000000c5'
-         });
+        backdrop: '#000000c5',
+        allowOutsideClick:'false',
+        allowEscapeKey:'false',
+        allowEnterKey:'false'
+        });
         </script>";
         } else {
             echo ". <script>
@@ -56,7 +59,10 @@ class BaseDatos
         title: 'Error al Registrar el Producto',
         showConfirmButton: false,
         timer: 2000,
-        backdrop: '#000000c5'
+        backdrop: '#000000c5',
+        allowOutsideClick:'false',
+        allowEscapeKey:'false',
+        allowEnterKey:'false'
          });
         </script>";
         }
@@ -76,13 +82,14 @@ class BaseDatos
         //obtener todos los datos
         return ($consultarDatos->fetchAll());
     }
+
     public function eliminarDatos($consultaSQL)
     {
-         //establecer una conexion
-         $conexionBD = $this->conectarBD();
-         //preparar consulta
-         $eliminarDatos = $conexionBD->prepare($consultaSQL);
-         //ejecutar la consulta
+        //establecer una conexion
+        $conexionBD = $this->conectarBD();
+        //preparar consulta
+        $eliminarDatos = $conexionBD->prepare($consultaSQL);
+        //ejecutar la consulta
         $resultado = $eliminarDatos->execute();
 
         //verifico el resultado
@@ -94,7 +101,10 @@ class BaseDatos
         title: 'Producto Eliminado Correctamente',
         showConfirmButton: false,
         timer: 2000,
-        backdrop: '#000000c5'
+        backdrop: '#000000c5',
+        allowOutsideClick:'false',
+        allowEscapeKey:'false',
+        allowEnterKey:'false'
          });
         </script>";
         } else {
@@ -105,7 +115,51 @@ class BaseDatos
         title: 'Error al Eliminar el Producto',
         showConfirmButton: false,
         timer: 2000,
-        backdrop: '#000000c5'
+        backdrop: '#000000c5',
+        allowOutsideClick:'false',
+        allowEscapeKey:'false',
+        allowEnterKey:'false'
+         });
+        </script>";
+        }
+    }
+    
+    public function editarDatos($consultaSQL)
+    {
+        //establecer una conexion
+        $conexionBD = $this->conectarBD();
+        //preparar consulta
+        $editarDatos = $conexionBD->prepare($consultaSQL);
+        //ejecutar la consulta
+        $resultado = $editarDatos->execute();
+
+        //verifico el resultado
+        if ($resultado) {
+            echo "  . <script>
+            Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Producto Editado Correctamente',
+        showConfirmButton: false,
+        timer: 2000,
+        backdrop: '#000000c5',
+        allowOutsideClick:'false',
+        allowEscapeKey:'false',
+        allowEnterKey:'false'
+         });
+        </script>";
+        } else {
+            echo ". <script>
+            Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Error al Editar el Producto',
+        showConfirmButton: false,
+        timer: 2000,
+        backdrop: '#000000c5',
+        allowOutsideClick:'false',
+        allowEscapeKey:'false',
+        allowEnterKey:'false'
          });
         </script>";
         }
