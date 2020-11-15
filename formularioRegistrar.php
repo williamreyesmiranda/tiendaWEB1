@@ -20,7 +20,7 @@
 
     <!-- Page Content -->
     <div class="container">
-        <div class=" mx-auto d-block border border-dark rounded">
+        <div style= "font-family: comfortaa;">
             <h2 class="mx-auto d-block mt-5 p-1">Registro de Productos</h2>
             <form action="registrarProducto.php" class="needs-validation mt-4 p-2" method="POST" novalidate>
                 <div class="form-group ">
@@ -46,11 +46,20 @@
                 <div class="form-group ">
                     <label for="descripcion">Descripción: (opcional)</label>
                     <textarea class="form-control" id="descripcion" placeholder="" name="descripcion" rows="5"></textarea>
-
-                  
                 </div>
 
-                <button type="submit" class="btn btn-dark mb-5 mt-3" name="botonRegistro">Registrar Producto</button>
+                <button type="submit" 
+                style="background-color:#4d1b47;
+                                color: #FFFFFF; 
+                                font-family:sketchy; 
+                                border-radius: 20px;
+                                border: none;
+                                font-size:20px;
+                                letter-spacing: 3px;
+                                display: inline-block;
+                                padding: 8px;
+                                margin-top: 20px;"
+                                name="botonRegistro">Registrar Producto</button>
             </form>
         </div>
 

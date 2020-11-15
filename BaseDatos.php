@@ -17,7 +17,7 @@ class BaseDatos
     {
 
         try {
-            $datosDB = "mysql:host=localhost;dbname=db_tiendaweb1;charset=utf8";
+            $datosDB = "mysql:host=localhost;dbname=db_tiendaweb1";
             $conexionBD = new PDO($datosDB, $this->usuarioDB, $this->passwordDB);
             return ($conexionBD);
         } catch (PDOException $error) {

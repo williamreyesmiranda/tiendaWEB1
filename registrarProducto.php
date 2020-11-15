@@ -10,7 +10,7 @@ if(isset($_POST['botonRegistro'])){
 
     //copia u objeto de clase BD
     $transaccion= new BaseDatos();
-    //JNKKM
+    
     //crear consulta
     $consultaSQL="INSERT INTO productos(nombre, marca, descripcion, precio) VALUES ('$nombre','$marca','$descripcion','$precio')";
 
